@@ -16,14 +16,16 @@ SOURCES += \
     abstractserializator.cpp \
     examstestserializator.cpp \
     fieldschecker.cpp \
-    reviewedtestserializator.cpp
+    reviewedtestserializator.cpp \
+    pluginconfigserializator.cpp
 
 HEADERS  += \
     serializators.h \
     abstractserializator.h \
     examstestserializator.h \
     fieldschecker.h \
-    reviewedtestserializator.h
+    reviewedtestserializator.h \
+    pluginconfigserializator.h
 
 RESOURCES += \
     serializators.qrc
@@ -37,7 +39,8 @@ SOURCES += \
     ../DataClasses/exception.cpp \
     ../DataClasses/reviewedtest.cpp \
     ../DataClasses/abstracttest.cpp \
-    ../DataClasses/abstracttesttask.cpp
+    ../DataClasses/abstracttesttask.cpp \
+    ../Plugins/plugininfo.cpp
 
 HEADERS  +=  \
     ../DataClasses/reviewedtesttask.h \
@@ -47,7 +50,8 @@ HEADERS  +=  \
     ../DataClasses/exception.h \
     ../DataClasses/reviewedtest.h \
     ../DataClasses/abstracttest.h \
-    ../DataClasses/abstracttesttask.h
+    ../DataClasses/abstracttesttask.h \
+    ../Plugins/plugininfo.h
 
 
 

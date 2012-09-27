@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<globals>
+		<title>Системы счисления</title>
+		<version>1.0</version>
+		<startCode>1</startCode>
+		<author>Вася Пупкин</author>
+	</globals>
+	<unit code='1'> <!--соответствует 1.1-->
+		<title>Перевод из 10ой в 2ю</title>
+		<practiceFile>TenToTwo.html</practiceFile>
+		<testFile>TenToTwo.xml</testFile>
+	</unit>
+	<unit code='2'> <!--соответствует 1.2-->
+		<title>Перевод из 2ой в 10ю</title>
+		<practiceFile>inner</practiceFile>
+		<testFile>TwoToTen.xml</testFile>
+	</unit>
+</root>

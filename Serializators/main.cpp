@@ -12,13 +12,35 @@ int main(int argc, char *argv[])
 
     QApplication a(argc, argv);
 
-    ReviewedTestSerializator serializator;
+//    ReviewedTestSerializator serializator;
 
-    ReviewedTest test;
+//    ReviewedTest test;
 
+//    try
+//    {
+//        test = serializator.loadTest("c:\\reviewedtest.xml");
+//    }
+//    catch (Exception err)
+//    {
+//        qDebug() << err.getErrorMessage();
+//    }
+//    qDebug() << "parsing complete";
+
+//    try
+//    {
+//        serializator.saveTest(test, "c:\\test1.xml");
+//    }
+//    catch (Exception err)
+//    {
+//        qDebug() << err.getErrorMessage();
+//    }
+//    qDebug() << "saving complete";
+
+    PluginConfigSerializator plugin;
+    PluginInfo info;
     try
     {
-        test = serializator.loadTest("c:\\reviewedtest.xml");
+        info = plugin.loadPluginConfig("xmlconfig.xml");
     }
     catch (Exception err)
     {
@@ -28,7 +50,7 @@ int main(int argc, char *argv[])
 
     try
     {
-        serializator.saveTest(test, "c:\\test1.xml");
+        plugin.savePluginConfig(info, "c:\\test1.xml");
     }
     catch (Exception err)
     {
